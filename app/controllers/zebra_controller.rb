@@ -1,4 +1,9 @@
 class ZebraController < ApplicationController
+
+  def homie
+    render ({:template=>"game_templates/homepage"})
+  end
+
 def giraffe 
   @comp_move = ["rock","paper","scissors"].sample
   if @comp_move == "rock"
